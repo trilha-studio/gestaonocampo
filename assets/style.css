@@ -113,3 +113,39 @@ footer p{margin:.3em 0}
  .hero-capas .c2{right:0;top:40px;transform:rotate(7deg)}
  .hero-capas .c3{left:50%;top:0;margin-left:-150px;width:320px;margin-left:-160px;z-index:2}
 }
+
+.pacote-box{background:#fff;border:2px solid var(--ouro);border-radius:var(--raio);padding:32px 24px 28px;margin:0 auto 44px;max-width:720px;text-align:center;box-shadow:0 8px 24px rgba(27,95,32,.1)}
+.pacote-box .selo{color:var(--ouro-esc)}
+.pacote-box h2{font-size:1.85rem;color:var(--verde-esc);margin:0 0 8px}
+.pacote-box .pacote-lead{margin:0 auto 8px;max-width:52ch;color:#3c463c}
+.pacote-box .preco{justify-content:center;margin:18px 0 8px}
+.pacote-box .ancora{color:var(--cinza);margin:0 0 20px;font-size:.95rem}
+.pacote-box .ancora s{color:#8a948a}
+.pacote-box .btn{min-width:min(100%, 320px)}
+.pacote-box .nota{margin-top:12px}
+.incluso{display:inline-block;margin-top:auto;padding:10px 14px 0;border-top:1px dashed var(--borda);width:100%;color:var(--verde-esc);font-weight:600;font-size:.95rem}
+.chamada .acoes{max-width:420px}
+@media (min-width:700px){
+ .pacote-box{padding:40px 40px 36px}
+ .pacote-box h2{font-size:2.1rem}
+ .chamada .acoes{max-width:420px}
+}
+
+
+/* páginas de oferta (upsell / downsell) — reutilizam .pacote-box */
+body.oferta{min-height:100vh;display:flex;flex-direction:column}
+body.oferta main{padding:36px 0 56px;flex:1}
+body.oferta footer{margin-top:auto}
+.pacote-box .oferta-titulo{font-size:1.85rem;color:var(--verde-esc);margin:0 0 8px;line-height:1.2}
+@media (min-width:700px){.pacote-box .oferta-titulo{font-size:2.1rem}}
+.cta-kiwify{margin:16px auto 0;max-width:360px;min-height:52px}
+.pacote-box .recusar{margin:18px 0 0;font-size:.95rem}
+.pacote-box .recusar a{color:var(--cinza);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.pacote-box .recusar a:hover{color:var(--verde-esc)}
+.oferta-lista{display:grid;gap:14px;text-align:left;margin:20px auto 24px;max-width:52ch;padding:0}
+.oferta-lista li{position:relative;padding-left:26px;margin:0;color:#3c463c;font-size:.95rem;list-style:none}
+.oferta-lista li::before{content:"";position:absolute;left:0;top:.45em;width:16px;height:16px;border-radius:50%;background:var(--verde) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='%23f9a825' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.oferta .topo nav,.oferta .topo .btn-sm{display:none}
+@media (min-width:700px){
+ body.oferta main{padding:48px 0 72px}
+}
